@@ -98,3 +98,166 @@ img {
 }
 
 /* end header */
+
+/* start hero */
+
+.hero {
+  background: url(../image/bg-hero.jpeg) no-repeat;
+  background-size: cover;
+  padding: 194px 805px 208px 134px;
+}
+
+.hero__title,
+.hero__title > span {
+  font-family: Yeseva One;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 46px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-bottom: 19px;
+}
+
+span {
+  color: rgb(227, 184, 115);
+}
+
+.hero__desk {
+  text-transform: none;
+  color: rgb(255, 255, 255);
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: left;
+  margin-bottom: 14px;
+}
+
+.hero__button {
+  padding: 19px 23px;
+  margin-right: 20px;
+  width: 207px;
+}
+
+.hero__button:nth-child(4) {
+  border: 1px solid rgb(255, 255, 255);
+  background: none;
+}
+
+.hero__button_text {
+  color: rgb(255, 255, 255);
+  font-style: italic;
+  font-size: 11px;
+  line-height: 15px;
+  text-align: center;
+}
+
+/* end hero */
+
+/* start comleted */
+
+.completed {
+  background-color: rgb(19, 19, 19);
+  padding: 107px 135px 415px;
+  display: grid;
+  grid-template-areas:
+    ". list"
+    "desk img"
+    "parameters img"
+    "paging img";
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto repeat(3, 1fr);
+  column-gap: 50px;
+}
+
+.completed__list {
+  grid-area: list;
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 61px;
+  margin-bottom: 45px;
+}
+
+.completed__list_element {
+  color: rgba(255, 255, 255, 0.3);
+  font-family: Yeseva One;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: left;
+}
+
+.completed__list_element:nth-child(1) {
+  color: rgb(227, 184, 115);
+  padding-bottom: 7px;
+  position: relative;
+}
+
+.completed__list_element:nth-child(1)::after {
+  content: "";
+  width: 194px;
+  height: 1px;
+  background-color: rgb(227, 184, 115);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.completed__desk {
+  grid-area: desk;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.completed__desk_title {
+  color: rgb(227, 184, 115);
+  font-family: Yeseva One;
+  font-size: 27px;
+  font-weight: 400;
+  line-height: 31px;
+  letter-spacing: -7%;
+  text-align: left;
+  width: 253px;
+}
+
+.completed__desk_text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19px;
+  text-align: left;
+  text-transform: none;
+}
+
+.completed__parameters {
+  grid-area: parameters;
+  display: grid;
+  grid-template-columns: 126px auto;
+  grid-template-rows: 73px 55px;
+  gap: 35px 67px;
+}
+
+.completed__paremeters_element_title {
+  color: rgb(227, 184, 115);
+  font-family: Yeseva One;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: left;
+}
+
+.completed__paremeters_element_text {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: left;
+}
+
+.completed__paging {
+  grid-area: paging;
+  background: url(../image/svg/completed.svg) no-repeat left;
+}
+
+.completed__img {
+  grid-area: img;
+}
+
+/* end comleted */
