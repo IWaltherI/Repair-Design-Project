@@ -24,10 +24,22 @@ button:active {
   outline: none;
 }
 
+input:focus,
+input:active,
+input:hover {
+  outline: none;
+}
+
 a,
 button,
-button > p {
+button > p,
+.control__checkbox_input_fake,
+.control__checkbox_input_text {
   cursor: pointer;
+}
+
+input {
+  cursor: auto;
 }
 
 img {
@@ -261,3 +273,138 @@ span {
 }
 
 /* end comleted */
+
+/* start control */
+
+.control {
+  margin-top: -329px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  margin-bottom: 148px;
+}
+
+.control__title {
+  color: rgb(255, 255, 255);
+  font-family: Yeseva One;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 23px;
+  text-align: center;
+  padding-bottom: 41px;
+  background: url(../image/svg/control.svg) no-repeat bottom;
+  margin-bottom: 32px;
+}
+
+.control__wrap_video {
+  position: relative;
+}
+
+.control__play {
+  position: absolute;
+  top: 173px;
+  right: 367px;
+}
+
+.control__text {
+  max-width: 681px;
+  color: rgb(54, 54, 54);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
+  text-align: center;
+  text-transform: none;
+  padding-top: 36px;
+  position: relative;
+  margin-bottom: 92px;
+}
+
+.control__text::before {
+  content: "";
+  position: absolute;
+  width: 55px;
+  height: 2px;
+  top: 0;
+  left: 313px;
+  border-radius: 30px;
+  background: rgb(227, 184, 115);
+}
+
+.control__inputs {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 50px;
+  margin-bottom: 33px;
+}
+
+.control__inputs_input_text {
+  color: rgba(54, 54, 54, 0.5);
+  font-family: Nunito Sans;
+  font-size: 13px;
+  line-height: 18px;
+  text-align: left;
+  text-transform: none;
+}
+
+.control__inputs_input_form {
+  width: 231px;
+  padding: 7px 0 9px;
+  border-bottom: 1px solid rgba(54, 54, 54, 0.3);
+  color: black;
+  text-transform: none;
+}
+
+.control__inputs_input_form::placeholder {
+  text-transform: none;
+  color: rgb(54, 54, 54);
+  font-family: Nunito Sans;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: left;
+}
+
+.control__inputs_input:nth-child(1) {
+  margin-right: 6px;
+}
+
+.control__inputs_button {
+  padding: 20px 75px 13px;
+}
+
+.control__inputs_button_text {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: center;
+}
+
+.control__checkbox_input {
+  display: none;
+}
+.control__checkbox_input_fake {
+  display: inline-flex;
+  width: 18px;
+  height: 18px;
+  background: #e3b873;
+  color: #fff;
+  justify-content: center;
+}
+.control__checkbox_input_fake::before {
+  content: "\2714";
+  opacity: 0;
+  transition: 0.2s;
+}
+.control__checkbox_input:checked + .control__checkbox_input_fake::before {
+  opacity: 1;
+}
+
+.control__checkbox_input_text {
+  color: rgb(24, 24, 24);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 163.68%;
+  text-align: left;
+  text-transform: none;
+}
+
+/* end control */
