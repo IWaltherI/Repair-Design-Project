@@ -32,7 +32,7 @@ input:hover {
 
 a,
 button,
-button > p,
+button>p,
 .control__checkbox_input_fake,
 .control__checkbox_input_text {
   cursor: pointer;
@@ -120,7 +120,7 @@ img {
 }
 
 .hero__title,
-.hero__title > span {
+.hero__title>span {
   font-family: Yeseva One;
   font-size: 40px;
   font-weight: 400;
@@ -381,6 +381,7 @@ span {
 .control__checkbox_input {
   display: none;
 }
+
 .control__checkbox_input_fake {
   display: inline-flex;
   width: 18px;
@@ -389,12 +390,14 @@ span {
   color: #fff;
   justify-content: center;
 }
+
 .control__checkbox_input_fake::before {
   content: "\2714";
   opacity: 0;
   transition: 0.2s;
 }
-.control__checkbox_input:checked + .control__checkbox_input_fake::before {
+
+.control__checkbox_input:checked+.control__checkbox_input_fake::before {
   opacity: 1;
 }
 
@@ -684,3 +687,114 @@ span {
 }
 
 /* end fantasies */
+
+/* start clients */
+
+.clients {
+  padding-bottom: 355px;
+  background: url(../image/bg-clients.png) no-repeat bottom;
+}
+
+.clients__title {
+  color: rgb(24, 24, 24);
+  font-family: Yeseva One;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 23px;
+  text-align: center;
+  padding-bottom: 40px;
+  margin-bottom: 24px;
+  background: url(../image/svg/clients.svg) no-repeat bottom;
+}
+
+.clients__desc {
+  color: rgb(24, 24, 24);
+  font-family: Yeseva One;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 23px;
+  text-align: center;
+  margin-bottom: 39px;
+}
+
+.clients__cards {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  gap: 54px;
+  margin: 0 102px;
+}
+
+.clients__card {
+  padding: 24px 31px 94px 21px;
+  box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.04);
+  background: rgb(255, 255, 255);
+  display: grid;
+  grid-template-areas:
+    "img name"
+    "text text";
+  grid-template-columns: 76px auto;
+  grid-template-rows: repeat(2, auto);
+  gap: 22px 23px;
+  justify-items: center;
+}
+
+.clients__card_img {
+  grid-area: img;
+}
+
+.clients__card_name {
+  grid-area: name;
+  color: rgb(24, 24, 24);
+  font-family: Yeseva One;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: left;
+  margin-top: 17px;
+}
+
+.clients__card_text {
+  grid-area: text;
+  color: rgb(149, 149, 149);
+  font-size: 13px;
+  line-height: 180%;
+  text-align: left;
+  text-transform: none;
+}
+
+.clients__data {
+  width: max-content;
+  display: flex;
+  flex-flow: row nowrap;
+  margin-right: 1px;
+  margin-top: -27px;
+  box-shadow: 5px 5px 20px 0px rgba(227, 184, 115, 0.5);
+  background: rgb(227, 184, 115);
+}
+
+.clients__data_text {
+  color: rgb(255, 255, 255);
+  font-family: Yeseva One;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+}
+
+.cl__data_square {
+  padding: 17px 14px 17px 65px;
+  background-image: url(../image/svg/clients_square.svg);
+  background-repeat: no-repeat;
+  background-position: 15px;
+}
+
+.cl__data_days {
+  padding: 17px 12px 17px 66px;
+  background-image: url(../image/svg/clients__days.svg);
+  background-repeat: no-repeat;
+  background-position: 15px;
+  border-left: 1px solid rgb(255, 255, 255);
+}
+
+/* end cliens */
