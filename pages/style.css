@@ -337,7 +337,8 @@ span {
   margin-bottom: 33px;
 }
 
-.control__inputs_input_text {
+.control__inputs_input_text,
+.form__text {
   color: rgba(54, 54, 54, 0.5);
   font-family: Nunito Sans;
   font-size: 13px;
@@ -346,7 +347,8 @@ span {
   text-transform: none;
 }
 
-.control__inputs_input_form {
+.control__inputs_input_form,
+.form__input {
   width: 231px;
   padding: 7px 0 9px;
   border-bottom: 1px solid rgba(54, 54, 54, 0.3);
@@ -354,7 +356,8 @@ span {
   text-transform: none;
 }
 
-.control__inputs_input_form::placeholder {
+.control__inputs_input_form::placeholder,
+.form__input::placeholder {
   text-transform: none;
   color: rgb(54, 54, 54);
   font-family: Nunito Sans;
@@ -378,11 +381,13 @@ span {
   text-align: center;
 }
 
-.control__checkbox_input {
+.control__checkbox_input,
+.form__checkbox {
   display: none;
 }
 
-.control__checkbox_input_fake {
+.control__checkbox_input_fake,
+.form__checkbox-fake {
   display: inline-flex;
   width: 18px;
   height: 18px;
@@ -391,17 +396,20 @@ span {
   justify-content: center;
 }
 
-.control__checkbox_input_fake::before {
+.control__checkbox_input_fake::before,
+.form__checkbox-fake::before {
   content: "\2714";
   opacity: 0;
   transition: 0.2s;
 }
 
-.control__checkbox_input:checked+.control__checkbox_input_fake::before {
+.control__checkbox_input:checked+.control__checkbox_input_fake::before,
+.form__checkbox:checked+.form__checkbox-fake::before {
   opacity: 1;
 }
 
-.control__checkbox_input_text {
+.control__checkbox_input_text,
+.form__checkbox-text {
   color: rgb(24, 24, 24);
   font-size: 14px;
   font-weight: 400;
@@ -547,6 +555,8 @@ span {
   margin-bottom: 48px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.15);
   padding: 7px 0 3px;
+  text-transform: none;
+  color: #fff;
 }
 
 .request__form_input::placeholder {
@@ -798,3 +808,95 @@ span {
 }
 
 /* end cliens */
+
+/* start questions */
+
+.questions {
+  margin: -222px auto 52px;
+  max-width: 883px;
+  background: rgb(24, 24, 24);
+  padding: 34px 181px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+.questions__title {
+  font-family: Yeseva One;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 23px;
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.questions__wrap {
+  display: grid;
+  grid-template-areas: 'one two'
+    'three three';
+  grid-template-columns: repeat(2, 231px);
+  grid-template-rows: repeat(2, 45px);
+  gap: 48px 58px;
+  margin-bottom: 48px;
+}
+
+.one {
+  grid-area: one;
+}
+
+.two {
+  grid-area: two;
+}
+
+.three {
+  grid-area: three;
+}
+
+.questions__form_name {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 13px;
+  line-height: 18px;
+  text-align: left;
+}
+
+.questions__form_input {
+  background: none;
+  color: #fff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  ;
+}
+
+.questions__form_input::placeholder {
+  color: #fff;
+}
+
+.three>.questions__form_input {
+  width: 516px;
+}
+
+.questions__checkbox {
+  margin-bottom: 50px;
+}
+
+.questions__checkbox_text {
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 163.68%;
+  text-align: left;
+}
+
+.questions__button {
+  padding: 20px 75px;
+}
+
+.questions__button_text {
+  color: rgb(255, 255, 255);
+  font-size: 13px;
+  line-height: 18px;
+  text-align: center;
+}
+
+/* end questions */
+
+/* Доделан раздел request - инпут с маленькой буквы */

@@ -88,22 +88,26 @@
       </div>
       <p class="control__text">At each facility, a camera is installed that broadcasts the progress of work on the clock. At any time, you can go to our website and monitor the progress of work in your apartment. You can watch the live broadcast from one of our facilities! Leave a request below and you will receive a link to the broadcast.</p>
       <section class="control__inputs">
+
         <label for="input" class="control__inputs_input">
-          <p class="control__inputs_input_text">Name</p>
-          <input type="text" name="Name" class="control__inputs_input_form" placeholder="What is your name:">
+          <p class="control__inputs_input_text form__text">Name</p>
+          <input type="text" name="Name" class="control__inputs_input_form form__input" placeholder="What is your name:">
         </label>
+
         <label for="input" class="control__inputs_input">
-          <p class="control__inputs_input_text">Phone</p>
-          <input type="tel" name="Phone" class="control__inputs_input_form" placeholder="Your phone number:">
+          <p class="control__inputs_input_text form__text">Phone</p>
+          <input type="tel" name="Phone" class="control__inputs_input_form form__input" placeholder="Your phone number:">
         </label>
+
         <button class="control__inputs_button button__orange">
           <p class="control__inputs_button_text">Submit</p>
         </button>
       </section>
+
       <label class="control__checkbox">
-        <input type="checkbox" class="control__checkbox_input">
-        <span class="control__checkbox_input_fake"></span>
-        <span class="control__checkbox_input_text">I agree to the processing of personal data.</span>
+        <input type="checkbox" class="control__checkbox_input form__checkbox">
+        <span class="control__checkbox_input_fake form__checkbox-fake"></span>
+        <span class="control__checkbox_input_text form__checkbox-text">I agree to the processing of personal data.</span>
       </label>
     </section>
     <!-- end control -->
@@ -176,22 +180,26 @@
         <div class="request__wrap">
           <h4 class="request__title">Leave a request for free<br>
             departure of the measurer</h4>
+
           <label for="" class="request__form">
-            <p class="request__form_name control__inputs_input_text">Name</p>
-            <input type="text" class="request__form_input" placeholder="What is your name:">
+            <p class="request__form_name form__text">Name</p>
+            <input type="text" class="request__form_input form__input" placeholder="What is your name:">
           </label>
+
           <label for="" class="request__form">
-            <p class="request__form_name control__inputs_input_text">Phone</p>
-            <input type="tel" class="request__form_input" placeholder="Your phone number:">
+            <p class="request__form_name form__text">Phone</p>
+            <input type="tel" class="request__form_input form__input" placeholder="Your phone number:">
           </label>
+
           <label for="" class="request__form">
-            <p class="request__form_name control__inputs_input_text">Email</p>
-            <input type="email" class="request__form_input" placeholder="Your email">
+            <p class="request__form_name form__text">Email</p>
+            <input type="email" class="request__form_input form__input" placeholder="Your email">
           </label>
+
           <label class="request__checkbox control__checkbox">
-            <input type="checkbox" class="request__checkbox_input control__checkbox_input">
-            <span class="request__checkbox_fake control__checkbox_input_fake"></span>
-            <span class="request__checkbox_text control__checkbox_input_text">I agree to the processing of personal data.</span>
+            <input type="checkbox" class="request__checkbox_input form__checkbox">
+            <span class="request__checkbox_fake form__checkbox-fake"></span>
+            <span class="request__checkbox_text form__checkbox-text">I agree to the processing of personal data.</span>
           </label>
           <button class="request__button button__orange">
             <p class="request__button_text">Call the measurer</p>
@@ -279,8 +287,39 @@
     </section>
     <!-- end clients -->
 
+    <!-- start questions -->
+    <section class="questions">
+      <h2 class="questions__title">have any questions?</h2>
 
+      <div class="questions__wrap">
+        <label class="questions__form one">
+          <p class="questions__form_name form__text">Name</p>
+          <input type="text" class="questions__form_input form__input" placeholder="What is your name:">
+        </label>
 
+        <label class="questions__form two">
+          <p class="questions__form_name form__text">Phone</p>
+          <input type="text" class="questions__form_input form__input" placeholder="Your phone number:">
+        </label>
+
+        <label class="questions__form three">
+          <p class="questions__form_name form__text">Question</p>
+          <input type="text" class="questions__form_input form__input" placeholder="I want to know:">
+        </label>
+      </div>
+
+      <label class="questions__checkbox">
+        <input type="checkbox" class="questions__checkbox_input form__checkbox">
+        <span class="questions__checkbox_fake form__checkbox-fake"></span>
+        <span class="questions__checkbox_text form__checkbox-text">I agree to the processing of personal data</span>
+      </label>
+
+      <button class="questions__button button__orange">
+        <p class="questions__button_text">Submit</p>
+      </button>
+
+    </section>
+    <!-- start questions -->
 
   </main>
   <!-- end main -->
