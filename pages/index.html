@@ -286,50 +286,66 @@
       </div>
     </section>
     <!-- end clients -->
-
-    <!-- start questions -->
-    <section class="questions">
-      <h2 class="questions__title">have any questions?</h2>
-
-      <div class="questions__wrap">
-        <label class="questions__form one">
-          <p class="questions__form_name form__text">Name</p>
-          <input type="text" class="questions__form_input form__input" placeholder="What is your name:">
+    <div class="wrapper__bg">
+      <!-- start questions -->
+      <section class="questions">
+        <h2 class="questions__title">have any questions?</h2>
+        <div class="questions__wrap">
+          <label class="questions__form one">
+            <p class="questions__form_name form__text">Name</p>
+            <input type="text" class="questions__form_input form__input" placeholder="What is your name:">
+          </label>
+          <label class="questions__form two">
+            <p class="questions__form_name form__text">Phone</p>
+            <input type="text" class="questions__form_input form__input" placeholder="Your phone number:">
+          </label>
+          <label class="questions__form three">
+            <p class="questions__form_name form__text">Question</p>
+            <input type="text" class="questions__form_input form__input" placeholder="I want to know:">
+          </label>
+        </div>
+        <label class="questions__checkbox">
+          <input type="checkbox" class="questions__checkbox_input form__checkbox">
+          <span class="questions__checkbox_fake form__checkbox-fake"></span>
+          <span class="questions__checkbox_text form__checkbox-text">I agree to the processing of personal data</span>
         </label>
-
-        <label class="questions__form two">
-          <p class="questions__form_name form__text">Phone</p>
-          <input type="text" class="questions__form_input form__input" placeholder="Your phone number:">
-        </label>
-
-        <label class="questions__form three">
-          <p class="questions__form_name form__text">Question</p>
-          <input type="text" class="questions__form_input form__input" placeholder="I want to know:">
-        </label>
-      </div>
-
-      <label class="questions__checkbox">
-        <input type="checkbox" class="questions__checkbox_input form__checkbox">
-        <span class="questions__checkbox_fake form__checkbox-fake"></span>
-        <span class="questions__checkbox_text form__checkbox-text">I agree to the processing of personal data</span>
-      </label>
-
-      <button class="questions__button button__orange">
-        <p class="questions__button_text">Submit</p>
-      </button>
-
-    </section>
-    <!-- start questions -->
-
+        <button class="questions__button button__orange">
+          <p class="questions__button_text">Submit</p>
+        </button>
+      </section>
+      <!-- end questions -->
+      <!-- start map -->
+      <section class="map">
+        <p class="map__desc">Rostov-on-Don, Nansen St., 239 Shopping Center
+          Decorum Tel +7 (928) 768 32 29</p>
+        <div class="map__links">
+          <a href="#!" class="map__links_link"><img src="../image/svg/email.svg"></a>
+          <a href="#!" class="map__links_link"><img src="../image/svg/instagram.svg"></a>
+        </div>
+        <img src="../image/map.png" alt="Map" class="map__img">
+      </section>
+      <!-- end map -->
+    </div>
   </main>
   <!-- end main -->
 
-
-
-
-
-
-
+  <!-- start footer -->
+  <footer class="footer header">
+    <a href="#!" class="footer__logo header__logo">IC "Repair Design Project"</a>
+    <div class="footer__links header__links">
+      <a href="#!" class="footer__links_link header__links_link">HOME</a>
+      <a href="#!" class="footer__links_link header__links_link">PROJECTS</a>
+      <a href="#!" class="footer__links_link header__links_link">MEASUREMENT</a>
+      <a href="#!" class="footer__links_link header__links_link">TEAM</a>
+      <a href="#!" class="footer__links_link header__links_link">REVIEWS</a>
+      <a href="#!" class="footer__links_link header__links_link">CONTACTS</a>
+    </div>
+    <p class="footer__phone header__phone">+7 (928) 768-32-39</p>
+    <button class="footer__phone header__button button__orange">
+      <p class="footer__phone header__button_text">Request a call</p>
+    </button>
+  </footer>
+  <!-- end footer -->
 </body>
 
 </html>

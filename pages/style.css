@@ -809,10 +809,16 @@ span {
 
 /* end cliens */
 
+.wrapper__bg {
+  background: url(../image/bg-map.jpeg) no-repeat center;
+  background-size: cover;
+  padding: 52px 260px 65px;
+}
+
 /* start questions */
 
 .questions {
-  margin: -222px auto 52px;
+  margin: -274px auto 52px;
   max-width: 883px;
   background: rgb(24, 24, 24);
   padding: 34px 181px;
@@ -898,3 +904,32 @@ span {
 }
 
 /* end questions */
+
+/* start map */
+
+.map__desc {
+  color: rgb(227, 184, 115);
+  font-family: Yeseva One;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 23px;
+  text-align: center;
+  text-transform: uppercase;
+  max-width: 589px;
+  margin: 0 auto;
+}
+
+.map__links {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 26px;
+  margin-bottom: 43px;
+}
+
+.map__img {
+  margin-bottom: 65px;
+}
+
+/* end map */
