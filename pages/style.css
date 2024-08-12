@@ -119,6 +119,10 @@ img {
   padding: 194px 805px 208px 134px;
 }
 
+.hero__wrap {
+  max-width: 676.11px;
+}
+
 .hero__title,
 .hero__title>span {
   font-family: Yeseva One;
@@ -176,9 +180,10 @@ span {
     "desk img"
     "parameters img"
     "paging img";
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 442px 679px;
   grid-template-rows: auto repeat(3, 1fr);
   column-gap: 50px;
+  justify-content: center;
 }
 
 .completed__list {
@@ -933,3 +938,29 @@ span {
 }
 
 /* end map */
+
+/* start large size */
+@media screen and (max-width: 2500px) and (min-width: 1401px) {
+
+  .control__wrap_video,
+  .control__text,
+  .control__inputs,
+  .control__checkbox,
+  .types,
+  .request,
+  .fantasies,
+  .clients,
+  .wrapper__bg,
+  .footer {
+    display: none;
+  }
+
+  .header {
+    justify-content: center;
+  }
+
+  .hero {
+    padding-left: 684px;
+  }
+
+}
