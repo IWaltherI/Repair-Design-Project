@@ -116,7 +116,7 @@ img {
 .hero {
   background: url(../image/bg-hero.jpeg) no-repeat;
   background-size: cover;
-  padding: 194px 805px 208px 134px;
+  padding: 194px 0px 208px 134px;
 }
 
 .hero__wrap {
@@ -960,9 +960,25 @@ span {
   }
 
   .hero {
-    padding-left: 684px;
+    padding: 194px 0 208px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+  }
+
+  .hero__wrapper {
+    width: 1200px;
+    display: flex;
   }
 
 }
 
 /* end large size */
+
+/* Start mobile side */
+
+@media screen and (max-width: 377px) {
+  .header__links {
+    display: none;
+  }
+}
