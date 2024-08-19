@@ -52,10 +52,13 @@ img {
   border-radius: 2px;
 }
 
+.hidden {
+  display: none;
+}
+
 /* start header */
 
 .header {
-  max-height: 83px;
   background-color: rgb(19, 19, 19);
   display: flex;
   flex-flow: row nowrap;
@@ -511,7 +514,7 @@ span {
 /* start request */
 
 .request {
-  background: url(../image/bg__request.png) no-repeat -50% -80%;
+  background: url(../image/bg__request.png) no-repeat -100%;
   display: flex;
   flex-flow: column nowrap;
   align-items: end;
@@ -934,6 +937,7 @@ span {
 }
 
 .map__img {
+  max-width: 100%;
   margin-bottom: 65px;
 }
 
@@ -977,8 +981,200 @@ span {
 
 /* Start mobile side */
 
-@media screen and (max-width: 377px) {
-  .header__links {
+@media screen and (max-width: 376px) {
+
+  body {
+    max-width: 375px;
+  }
+
+  .header__links,
+  .header__button,
+  .completed__list,
+  .completed__img,
+  .control__inputs_button {
+    display: none;
+  }
+
+  .hidden {
+    display: initial;
+  }
+
+  .header {
+    padding: 23px 18px;
+  }
+
+  .header__logo {
+    white-space: nowrap;
+    margin-right: 0px;
+  }
+
+  .header__phone {
+    white-space: nowrap;
+    color: rgb(255, 255, 255);
+    font-size: 11px;
+    line-height: 15px;
+    text-align: right;
+    margin-right: 0px;
+  }
+
+  .hero {
+    padding: 85px 18px 35px;
+    justify-content: center;
+  }
+
+  .hero__wrap {
+    max-width: 339px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+  }
+
+  .hero__title,
+  .hero__title>span {
+    font-size: 23px;
+    line-height: 132.83%;
+    margin-bottom: 16px;
+  }
+
+  .hero__desk {
+    font-size: 14px;
+    line-height: 135.84%;
+    margin-bottom: 32px;
+  }
+
+  .hero__button {
+    width: 338.61px;
+    margin: 0 0 26px;
+    padding: 19px 0;
+  }
+
+  .completed {
+    max-width: 375px;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 36px;
+    padding: 36px 17px 0px;
+  }
+
+  .completed__desk_title {
+    font-size: 22px;
+    line-height: 138.6%;
+    text-align: center;
+    align-self: center;
+  }
+
+  .completed__desk_text {
+    font-size: 11px;
+    line-height: 158.48%;
+    text-align: center;
+  }
+
+  .completed__parameters {
+    grid-template-columns: 99px auto;
+    grid-template-rows: 68px 44px;
+    gap: 27px 61px;
+  }
+
+  .completed__paremeters_element_title {
+    font-size: 14px;
+    line-height: 138.6%;
+  }
+
+  .completed__paremeters_element_text {
+    font-size: 11px;
+    line-height: 135.84%;
+    text-transform: none;
+  }
+
+  .control {
+    margin: 0 auto;
+    margin-bottom: 58px;
+  }
+
+  .control__wrap {
+    max-width: 375px;
+    background-color: rgb(19, 19, 19);
+    padding: 0 18px 88px;
+    margin: 0 auto;
+  }
+
+  .control__title {
+    margin-top: 22px;
+  }
+
+  .control__wrap_video {
+    margin-bottom: 28px;
+  }
+
+  .control__img {
+    width: 340px;
+  }
+
+  .control__play {
+    top: 33%;
+    left: 42%;
+    width: 60px;
+  }
+
+  .control__text {
+    color: rgb(255, 255, 255);
+    font-size: 11px;
+    line-height: 169.8%;
+    margin-bottom: 61px;
+  }
+
+  .control__text::before {
+    left: 142px;
+  }
+
+  .control__inputs {
+    flex-flow: column nowrap;
+    gap: 63px;
+    margin-bottom: 28px;
+  }
+
+  .control__inputs_input:nth-child(1) {
+    margin-right: 0px;
+  }
+
+  .control__inputs_input_form {
+    background-color: rgb(19, 19, 19);
+  }
+
+  .control__inputs_input_text {
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  .control__inputs_input_form {
+    width: 339.99px;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    color: #ffffff;
+  }
+
+  .control__inputs_input_form::placeholder {
+    color: rgb(255, 255, 255);
+    line-height: 138.72%;
+    text-align: left;
+  }
+
+  .control__checkbox_input_text {
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    line-height: 163.68%;
+  }
+
+  .control__inputs_button {
+    margin-top: -26px;
+    box-shadow: 0px 10px 20px 0px rgba(227, 184, 115, 0.1);
+    padding: 20px 147px;
+  }
+
+  .types,
+  .request,
+  .fantasies,
+  .clients,
+  .wrapper__bg,
+  .footer {
     display: none;
   }
 }
