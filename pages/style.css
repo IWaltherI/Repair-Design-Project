@@ -123,7 +123,7 @@ img {
 }
 
 .hero__wrap {
-  max-width: 676.11px;
+  max-width: 530px;
 }
 
 .hero__title,
@@ -175,6 +175,7 @@ span {
 /* start comleted */
 
 .completed {
+  margin-top: -1px;
   background-color: rgb(19, 19, 19);
   padding: 107px 135px 415px;
   display: grid;
@@ -304,13 +305,20 @@ span {
   margin-bottom: 32px;
 }
 
+.control__wrap {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
 .control__wrap_video {
   position: relative;
+  margin-bottom: 62px;
 }
 
 .control__play {
   position: absolute;
-  top: 173px;
+  top: 174px;
   right: 367px;
 }
 
@@ -388,6 +396,8 @@ span {
   line-height: 18px;
   text-align: center;
 }
+
+.control__checkbox {}
 
 .control__checkbox_input,
 .form__checkbox {
@@ -514,7 +524,7 @@ span {
 /* start request */
 
 .request {
-  background: url(../image/bg__request.png) no-repeat -100%;
+  background: url(../image/bg__request.png) no-repeat -100% -80%;
   display: flex;
   flex-flow: column nowrap;
   align-items: end;
@@ -622,7 +632,8 @@ span {
 /* start fantasies */
 
 .fantasies {
-  background: url(../image/bg-fantasies.jpeg) no-repeat;
+  background-image: url(../image/bg-fantasies.jpeg);
+  background-repeat: no-repeat;
   background-size: cover;
   display: flex;
   flex-flow: row nowrap;
@@ -674,7 +685,7 @@ span {
 }
 
 .fantasies__pictures {
-  display: grid;
+  display: flex;
   flex-flow: column nowrap;
   position: relative;
   margin-right: 102px;
@@ -877,7 +888,6 @@ span {
   background: none;
   color: #fff;
   border-bottom: 1px solid rgba(255, 255, 255, 0.15);
-  ;
 }
 
 .questions__form_input::placeholder {
@@ -885,7 +895,7 @@ span {
 }
 
 .three>.questions__form_input {
-  width: 516px;
+  max-width: 516px;
 }
 
 .questions__checkbox {
@@ -943,8 +953,16 @@ span {
 
 /* end map */
 
+/* footer start */
+
+.footer {
+  margin-top: -1px;
+}
+
+/* footer end */
+
 /* start large size */
-@media screen and (max-width: 2500px) and (min-width: 1401px) {
+@media screen and (max-width: 2500px) and (min-width: 1402px) {
 
   .control__wrap_video,
   .control__text,
@@ -991,7 +1009,15 @@ span {
   .header__button,
   .completed__list,
   .completed__img,
-  .control__inputs_button {
+  .control__inputs_button,
+  .request,
+  .img__one,
+  .img__two,
+  .img__three,
+  .img__four,
+  .clients,
+  .fantasies__list,
+  .footer {
     display: none;
   }
 
@@ -1042,8 +1068,13 @@ span {
     margin-bottom: 32px;
   }
 
+  .button__orange {
+    width: 340px;
+    padding: 19px 0;
+  }
+
   .hero__button {
-    width: 338.61px;
+    width: 340px;
     margin: 0 0 26px;
     padding: 19px 0;
   }
@@ -1087,7 +1118,7 @@ span {
   }
 
   .control {
-    margin: 0 auto;
+    margin: -1px auto;
     margin-bottom: 58px;
   }
 
@@ -1111,9 +1142,9 @@ span {
   }
 
   .control__play {
-    top: 33%;
-    left: 42%;
-    width: 60px;
+    top: 75px;
+    left: 151px;
+    width: 37px;
   }
 
   .control__text {
@@ -1137,27 +1168,28 @@ span {
     margin-right: 0px;
   }
 
-  .control__inputs_input_form {
-    background-color: rgb(19, 19, 19);
-  }
-
-  .control__inputs_input_text {
+  .control__inputs_input_text,
+  .form__text {
     color: rgba(255, 255, 255, 0.5);
   }
 
-  .control__inputs_input_form {
+  .control__inputs_input_form,
+  .form__input {
+    background-color: rgb(19, 19, 19);
     width: 339.99px;
     border-bottom: 1px solid rgb(255, 255, 255);
     color: #ffffff;
   }
 
-  .control__inputs_input_form::placeholder {
+  .control__inputs_input_form::placeholder,
+  .form__input::placeholder {
     color: rgb(255, 255, 255);
     line-height: 138.72%;
     text-align: left;
   }
 
-  .control__checkbox_input_text {
+  .control__checkbox_input_text,
+  .form__checkbox-text {
     color: rgb(255, 255, 255);
     font-size: 14px;
     line-height: 163.68%;
@@ -1166,15 +1198,142 @@ span {
   .control__inputs_button {
     margin-top: -26px;
     box-shadow: 0px 10px 20px 0px rgba(227, 184, 115, 0.1);
-    padding: 20px 147px;
   }
 
-  .types,
-  .request,
-  .fantasies,
-  .clients,
-  .wrapper__bg,
-  .footer {
-    display: none;
+  .types {
+    margin-bottom: 55px;
+    padding: 0 18px;
+  }
+
+  .types__title {
+    font-size: 22px;
+    line-height: 138.6%;
+    margin-bottom: 40px;
+  }
+
+  .types__cards {
+    flex-flow: column nowrap;
+    gap: 59px;
+  }
+
+  .types__card_img {
+    width: 340px;
+  }
+
+  .types__card_wrap {
+    align-self: start;
+    width: 270px;
+    height: 241px;
+    margin-left: -1px;
+  }
+
+  .types__card_list_title {
+    text-transform: none;
+    font-size: 15px;
+    line-height: 138.6%;
+  }
+
+  .types__card_button {
+    width: auto;
+    margin-left: 0;
+    padding: 11px 19px;
+  }
+
+  .types__card_button_text {
+    font-size: 15px;
+    line-height: 138.6%;
+  }
+
+  .fantasies {
+    box-sizing: border-box;
+    background-image: none;
+    background: linear-gradient(180deg, rgb(255, 255, 255) 53%, rgb(19, 19, 19) 47%);
+    max-height: 384px;
+    flex-flow: column nowrap;
+    align-items: center;
+    margin-bottom: 0;
+  }
+
+  .fantasies__desc {
+    margin: 0;
+  }
+
+  .fantasies__desc_title {
+    font-size: 22px;
+    line-height: 138.6%;
+    text-align: center;
+    margin-bottom: 24px;
+  }
+
+  .fanasies__wrap-img {
+    position: relative;
+  }
+
+  .fantasies__img {
+    z-index: 1;
+  }
+
+  .fantasies__img-svg {
+    z-index: 2;
+    position: absolute;
+    top: 100px;
+    right: 13px;
+  }
+
+  .wrapper__bg {
+    background: rgb(19, 19, 19);
+    padding: 0;
+    margin-top: -1px;
+  }
+
+  .questions {
+    margin: 0;
+    background: rgb(19, 19, 19);
+    padding: 0 18px 46px;
+  }
+
+  .questions__title {
+    margin-bottom: 52px;
+  }
+
+  .questions__wrap {
+    display: flex;
+    flex-flow: column nowrap;
+    max-width: 340px;
+    gap: 63px;
+    margin-bottom: 21px;
+  }
+
+  .questions__checkbox {
+    margin-bottom: 67px;
+    align-self: flex-start;
+  }
+
+  .map {
+    display: flex;
+    flex-flow: column-reverse nowrap;
+    max-width: 340px;
+    margin: 0 auto;
+  }
+
+  .map__img {
+    max-width: 100%;
+    margin-bottom: 41px;
+  }
+
+  .map__desc {
+    font-size: 18px;
+    line-height: 138.6%;
+  }
+
+  .map__links {
+    margin-bottom: 49px;
+  }
+
+  .map__links_link>img {
+    width: 39px;
+    height: 39px;
   }
 }
+
+/* end mobile size */
