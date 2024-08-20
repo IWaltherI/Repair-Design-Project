@@ -72,6 +72,7 @@ img {
   color: rgb(227, 184, 115);
   font-size: 11px;
   line-height: 18px;
+  white-space: nowrap;
 }
 
 .header__links {
@@ -396,8 +397,6 @@ span {
   line-height: 18px;
   text-align: center;
 }
-
-.control__checkbox {}
 
 .control__checkbox_input,
 .form__checkbox {
@@ -962,7 +961,7 @@ span {
 /* footer end */
 
 /* start large size */
-@media screen and (max-width: 2500px) and (min-width: 1402px) {
+@media screen and (max-width: 2500px) and (min-width: 1401px) {
 
   .control__wrap_video,
   .control__text,
@@ -996,6 +995,23 @@ span {
 }
 
 /* end large size */
+
+/* start 1300 size */
+
+@media screen and (max-width:1301px) {
+  .header__logo {
+    margin-right: 0;
+  }
+
+  .fantasies__pictures {
+    display: flex;
+    flex-flow: column nowrap;
+    position: relative;
+    margin-left: -100px;
+  }
+}
+
+/* end 1300 size */
 
 /* Start mobile side */
 
