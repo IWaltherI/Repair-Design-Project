@@ -22,7 +22,7 @@
       <a href="#!" class="header__links_link">REVIEWS</a>
       <a href="#!" class="header__links_link">CONTACTS</a>
     </div>
-    <p class="header__phone">+7 (928) 768-32-39</p>
+    <a href="tel:8(928)768-32-39" class="header__phone">+7 (928) 768-32-39</a>
     <button class="header__button button__orange">
       <p class="header__button_text">Request a call</p>
     </button>
@@ -79,7 +79,17 @@
           <p class="completed__paremeters_element_text">Upon request</p>
         </div>
       </section>
-      <div class="completed__paging"></div>
+      <div class="completed__paging">
+        <img src="../image/svg/completed__arrow-left.svg" class="completed__paging_arrow arrow-left">
+
+        <div class="completed__paging_dots">
+          <div class="completed__paging_dot active"></div>
+          <div class="completed__paging_dot"></div>
+          <div class="completed__paging_dot"></div>
+
+        </div>
+        <img src="../image/svg/completed__arrow-right.svg" class="completed__paging_arrow arrow-right">
+      </div>
       <img src="../image/comleted-right.png" alt="Изоображения готовой комнаты" class="completed__img">
     </section>
     <!-- end completed -->
@@ -94,11 +104,11 @@
         </div>
         <p class="control__text">At each facility, a camera is installed that broadcasts the progress of work on the clock. At any time, you can go to our website and monitor the progress of work in your apartment. You can watch the live broadcast from one of our facilities! Leave a request below and you will receive a link to the broadcast.</p>
         <section class="control__inputs">
-          <label for="input" class="control__inputs_input">
+          <label for="input" class="control__inputs_input input__one">
             <p class="control__inputs_input_text form__text">Name</p>
             <input type="text" name="Name" class="control__inputs_input_form form__input" placeholder="What is your name:">
           </label>
-          <label for="input" class="control__inputs_input">
+          <label for="input" class="control__inputs_input input__two">
             <p class="control__inputs_input_text form__text">Phone</p>
             <input type="tel" name="Phone" class="control__inputs_input_form form__input" placeholder="Your phone number:">
           </label>
