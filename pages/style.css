@@ -1046,7 +1046,7 @@ span {
 
 /* start 768px */
 
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 769px) and (min-width: 600px) {
 
   .header__button,
   .header__links_link:nth-child(n+3),
